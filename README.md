@@ -1,18 +1,32 @@
-This is a [LlamaIndex](https://www.llamaindex.ai/) project bootstrapped with [`create-llama`](https://github.com/run-llama/LlamaIndexTS/tree/main/packages/create-llama).
+# Chat-llamaindex RAG
 
-## Getting Started
+This repository contains the code for the project "Chat-llamaindex-RAG" for the course "DataMining" at the University of Bologna.
 
-First, startup the backend as described in the [backend README](./backend/README.md).
+## Description
+The goal of this project is to create a multi-chatbot system that is able to answer user questions as well as to search for information on the user documents. The system is composed of 2 main component: the Chatbot and the LlamaIndex. The Chatbot is the main component of the system, it is able to answer user questions and to interact with the other components. The LlamaIndex is a search engine that is able to search for information on the user documents.
 
-Second, run the development server of the frontend as described in the [frontend README](./frontend/README.md).
+## How to run
+To run the system you need to install the requirements and then:
+1. Run the LlamaIndex server using the command `python3 main.py` in the backend folder
+2. Run the Llamaindex frontend using the command `npm run dev` in the frontend folder
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Components
+The models used in the project are:
+- mistral (mistralai/Mistral-7B-Instruct-v0.1)
+- zephir (HuggingFaceH4/zephyr-7b-beta)
+- tinyllama (TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+- dolphin (cognitivecomputations/dolphin-2.6-mistral-7b-dpo)
+- llama (meta-llama/Llama-2-7b-chat-hf)
+- vicuna_3b_q4 (TheBloke/Wizard-Vicuna-30B-Uncensored-GPTQ:gptq-4bit-32g-actorder_True)
+- llama_13B_4bit (TheBloke/Llama-2-13B-chat-GPTQ:main)
 
-## Learn More
+The vector database used in the project is **Milvus**.
 
-To learn more about LlamaIndex, take a look at the following resources:
+The search engine used in the project is **LlamaIndex**.
 
-- [LlamaIndex Documentation](https://docs.llamaindex.ai) - learn about LlamaIndex (Python features).
-- [LlamaIndexTS Documentation](https://ts.llamaindex.ai) - learn about LlamaIndex (Typescript features).
 
-You can check out [the LlamaIndexTS GitHub repository](https://github.com/run-llama/LlamaIndexTS) - your feedback and contributions are welcome!
+## Authors
+- [Andrea Zecca](https://github.com/AndreaZecca)
+- [Antonio Lopez](https://github.com/elements72)
+- [Matteo Vannucchi](https://github.com/MatteoVannucchi0)
+- [Stefano Colamonaco](https://github.com/StefanoColamonaco)
